@@ -4,3 +4,16 @@
     align-items: center;
     
 }
+.create_form input{
+  width: 300px;
+  padding: 10px;
+  border-bottom: 2px solid;
+  outline: none;
+}
+.create_form button {
+  padding: 10px;
+  background-color: #041004;
+  color: white;
+  cursor: pointer;
+}
+

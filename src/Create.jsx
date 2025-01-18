@@ -2,10 +2,12 @@
 
 const Create = () => {
   return (
-    <div>
-      <input type="text" name="" id="" />
-      <button type="button">add</button>
-    </div>
+    <div className="home">
+    <form className="create_form">
+        <input type="text" placeholder="Add a todo" />
+        <button type="submit">Add</button>
+    </form>
+</div>
   )
 }
 
