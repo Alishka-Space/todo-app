@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Creat = () => {
+const Create = () => {
   return (
     <div>
       <input type="text" name="" id="" />
@@ -9,4 +9,4 @@ const Creat = () => {
   )
 }
 
-export default Creat
+export default Create
