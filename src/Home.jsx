@@ -11,8 +11,11 @@ const Home = () => {
         .catch(err => console.log(err))
 
     },[])
-    const handleEdit = (e) => {
-        e.target.classList.toggle('checked')
+    const handleEdit = (id) => {
+        axios.put('http://localhost:5000/update/'+id)
+        .then(result => setTodos(result.data))
+        .catch(err => console.log(err))
+        
     }
   
     return (
@@ -25,7 +28,7 @@ const Home = () => {
                 ? <div><h2>No Record</h2></div> 
                 : todos.map((todo, index) => (
                     <div className='task' key={index}>
-                        <div className='checkbox' onClick={handleEdit} >
+                        <div className='checkbox' onClick={()=> handleEdit(todo._id)} >
                              <BsCircleFill className='icon' />
                              <p>{todo.task}</p>
                         </div>
