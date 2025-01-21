@@ -29,6 +29,13 @@ app.post('/add', (req, res) => {
 
 })
 
+app.put('/update/:id', (req, res) => {
+    const {id} = req.params;
+    TodoModel.findByIdAndUpdate({_id: id}, { isCompleted: true })
+    .then(result => res.json(result))
+    .catch(err => res.json(err))
+})
+
 
 app.listen(5000, () => {
     console.log('Server is running on port 5000');

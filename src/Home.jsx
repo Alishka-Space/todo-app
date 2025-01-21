@@ -13,7 +13,7 @@ const Home = () => {
     },[])
     const handleEdit = (id) => {
         axios.put('http://localhost:5000/update/'+id)
-        .then(result => setTodos(result.data))
+        .then(result => console.log(result))
         .catch(err => console.log(err))
         
     }
