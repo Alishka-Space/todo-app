@@ -11,6 +11,9 @@ const Home = () => {
         .catch(err => console.log(err))
 
     },[])
+    const handleEdit = (e) => {
+        e.target.classList.toggle('checked')
+    }
   
     return (
         <div className='home'>
@@ -22,7 +25,7 @@ const Home = () => {
                 ? <div><h2>No Record</h2></div> 
                 : todos.map((todo, index) => (
                     <div className='task' key={index}>
-                        <div className='checkbox'>
+                        <div className='checkbox' onClick={handleEdit} >
                              <BsCircleFill className='icon' />
                              <p>{todo.task}</p>
                         </div>

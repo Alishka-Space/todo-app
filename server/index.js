@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const TodoModel = require('./Models/Todo');
 const dotenv = require("dotenv");
-
 dotenv.config();
 const app = express();
 
