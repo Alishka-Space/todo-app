@@ -3,7 +3,10 @@ const mongoose = require('mongoose');
 const todoSchema = new mongoose.Schema({
     task: {
         type: String,
-        done: Boolean
+        done: {
+            type: Boolean,
+            default: false
+        }
     }
 })
 
