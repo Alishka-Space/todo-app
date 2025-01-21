@@ -29,5 +29,21 @@
   margin-top: 5px;
 
 } 
+.checkbox{
+  display: flex;
+  align-items: center;
+}
+.checkbox .icon{
+  margin-right: 5px;
+  font-size: 15px;
+  cursor: pointer;
+
+}
+.task div span {
+  margin : 0 5px 0 5px;
+  cursor: pointer;
+}
+
+
   
 
