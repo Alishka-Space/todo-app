@@ -1,8 +1,15 @@
 import Create from './Create'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 
 const Home = () => {
     const [todos, setTodos] = useState([])
+    useEffect(() => {
+        axios.get('http://localhost:5173/get')
+        .then(result => setTodos(result.data))
+        .catch(err => console.log(err))
+
+    },[])
   
     return (
         <div className='home'>
