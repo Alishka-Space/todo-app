@@ -10,7 +10,6 @@ app.use(cors());
 app.use(express.json());
 
 mongoose.connect(process.env.REACT_APP_MONGO_URI)
-// mongoose.connect('mongodb+srv://aliibrahimwork:JB272H6GHfO8TpzC@cluster0.5rpiq.mongodb.net/')
 
 
 
