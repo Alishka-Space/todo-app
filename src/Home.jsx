@@ -20,8 +20,8 @@ const Home = () => {
                 todos.length === 0 
                 ? <div><h2>No Record</h2></div> 
                 : todos.map((todo, index) => (
-                    <div key={index}>
-                        {todo.task}
+                    <div className='task' key={index}>
+                        <p>{todo.task}</p>
                     </div>
                 ))
             }
