@@ -5,7 +5,7 @@ import axios from 'axios'
 const Home = () => {
     const [todos, setTodos] = useState([])
     useEffect(() => {
-        axios.get('http://localhost:5173/get')
+        axios.get('http://localhost:5000/get')
         .then(result => setTodos(result.data))
         .catch(err => console.log(err))
 
@@ -21,7 +21,7 @@ const Home = () => {
                 ? <div><h2>No Record</h2></div> 
                 : todos.map((todo, index) => (
                     <div key={index}>
-                        {todo}
+                        {todo.task}
                     </div>
                 ))
             }
