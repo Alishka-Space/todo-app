@@ -35,6 +35,12 @@ h2{
   margin-top: 15px;
 
 } 
+
+.lin_through{
+  text-decoration: line-through;
+  color: grey;
+}
+
 .checkbox{
   display: flex;
   align-items: center;
