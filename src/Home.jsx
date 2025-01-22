@@ -19,6 +19,13 @@ const Home = () => {
         .catch(err => console.log(err))
         
     }
+    const handleDelete = (id) => {
+        axios.delete('http://localhost:5000/delete/'+id)
+        .then(result => {
+            location.reload()
+        })
+        .catch(err => console.log(err))
+    }
   
     return (
         <div className='home'>
@@ -40,7 +47,9 @@ const Home = () => {
                              <p className={todo.isCompleted ? "lin_through" : "" } >{todo.task}</p>
                         </div>
                         <div>
-                            <span><BsFillTrashFill className='icon'/></span>
+                            <span><BsFillTrashFill className='icon' 
+                                    onClick={()=> handleDelete(todo._id)}/>
+                            </span>
                         </div>
                     </div>
                 ))
