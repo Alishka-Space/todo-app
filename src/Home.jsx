@@ -35,7 +35,7 @@ const Home = () => {
                             }
                             
                              
-                             <p>{todo.task}</p>
+                             <p className={todo.isCompleted ? "lin_through" : "" } >{todo.task}</p>
                         </div>
                         <div>
                             <span><BsFillTrashFill className='icon'/></span>
