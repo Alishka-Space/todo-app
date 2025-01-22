@@ -5,7 +5,7 @@
     
 }
 .create_form input{
-  width: 300px;
+  width: 355px;
   padding: 10px;
   border-bottom: 2px solid;
   outline: none;
@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 350px;
+  width: 430px;
   padding: 3px 5px 3px 5px;
   background-color: black;
   color: white;
