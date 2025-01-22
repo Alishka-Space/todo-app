@@ -4,6 +4,12 @@
     align-items: center;
     
 }
+
+h2{
+  color: rgb(32, 24, 24);
+  font-size: 3em;
+  margin: 30px;
+}
 .create_form input{
   width: 355px;
   padding: 10px;
@@ -26,7 +32,7 @@
   background-color: black;
   color: white;
   height: 35px;
-  margin-top: 5px;
+  margin-top: 15px;
 
 } 
 .checkbox{
