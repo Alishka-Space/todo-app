@@ -19,3 +19,8 @@ Frontend: React, Vite
 Backend: Node.js, Express, MongoDB
 Database: MongoDB Atlas (for cloud database storage)
 
+## Deployment:
+The app is live on [Netlify](https://dotodotask.netlify.app/), allowing users to access the Todo List anytime, anywhere!
+
+Feel free to explore, contribute, and provide feedback. Enjoy managing your tasks!
+
