@@ -8,5 +8,9 @@
   "heroku-postbuild": "npm install --prefix client && npm install --prefix server && npm run build --prefix client"
 },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  
+  "engines": {
+  "node": ">=18.x"
+}
 }
