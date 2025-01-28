@@ -49,10 +49,10 @@ app.delete("/delete/:id", (req, res) => {
 
 // Serve Static Files in Production
 if (process.env.NODE_ENV === "production") {
-  // Serve static files from the dist folder
+
   app.use(express.static(path.join(__dirname, "dist")));
 
-  // Handle all other routes with the frontend's index.html
+
   app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "dist", "index.html"));
   });
