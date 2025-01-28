@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
   "main": "index.js",
-"scripts": {
-  "start": "node server/index.js",
-  "heroku-postbuild": "npm install --prefix client && npm install --prefix server && npm run build --prefix client"
-},
+  "scripts": {
+    "start": "node server/index.js",
+    "heroku-postbuild": "npm install --prefix client && npm install --prefix server && npm run build --prefix client"
+  },
   "author": "",
   "license": "ISC",
-  
   "engines": {
-  "node": ">=18.x"
-}
+    "node": ">=18.x"
+  },
+  "dependencies": {
+    "vite": "^6.0.11"
+  }
 }
